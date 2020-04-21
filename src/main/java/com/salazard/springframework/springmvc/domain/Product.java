@@ -1,11 +1,9 @@
 package com.salazard.springframework.springmvc.domain;
 
-import java.math.BigDecimal;
-
 public class Product {
     private Integer id;
     private String description;
-    private BigDecimal price;
+    private double price;
     private String imageUrl;
 
     public Integer getId() {
@@ -24,11 +22,11 @@ public class Product {
         this.description = description;
     }
 
-    public BigDecimal getPrice() {
+    public double getPrice() {
         return price;
     }
 
-    public void setPrice(BigDecimal price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 
