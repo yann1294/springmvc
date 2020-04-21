@@ -54,4 +54,12 @@ public class ProductController {
        Product saveProduct = productService.saveOrUpdate(product);
        return "redirect:/product/" + saveProduct.getId();
     }
+
+    @RequestMapping("/product/delete/{id}")
+    public String deleteProduct(@PathVariable Integer id){
+
+        productService.deleteProduct(id);
+
+        return "redirect:/products";
+    }
 }
