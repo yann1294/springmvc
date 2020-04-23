@@ -54,4 +54,12 @@ public class CustomerController {
         Customer saveProduct = customerService.saveOrUpdate(customer);
         return "redirect:/customer/" + saveProduct.getId();
     }
+
+    @RequestMapping("/customer/delete/{id}")
+    public String deleteCustomer(@PathVariable Integer id){
+
+        customerService.deleteCustomer(id);
+
+        return "redirect:/customers";
+    }
 }

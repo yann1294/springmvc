@@ -122,6 +122,11 @@ public class CustomerServiceImpl implements CustomerService {
         }
     }
 
+    @Override
+    public void deleteCustomer(Integer id) {
+        customers.remove(id);
+    }
+
     private Integer getNextKey() {
         return Collections.max(customers.keySet()) + 1;
     }

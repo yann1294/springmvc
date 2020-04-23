@@ -31,6 +31,7 @@
                 <th>ZipCode</th>
                 <th>List</th>
                 <th>Edit</th>
+                <th>Delete</th>
             </tr>
             <tr th:each="customer : ${customers}">
                 <td th:text="${customer.id}"></td>
@@ -45,6 +46,7 @@
                 <td th:text="${customer.zipCode}"></td>
                 <td><a th:href="${'/customer/' + customer.id}">View</a></td>
                 <td><a th:href="${'/customer/edit/' + customer.id}">Edit</a></td>
+                <td><a th:href="${'/customer/delete/' + customer.id}">Delete</a></td>
             </tr>
         </table>
         <div class="row">
