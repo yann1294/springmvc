@@ -9,15 +9,15 @@
     <script src="http://cdn.jsdelivr.net/webjars/jquery/3.5.0/jquery.min.js"
             th:href="@{/webjars/jquery/3.5.0/jquery.min.js}"></script>
 
-    <link rel="stylesheet" href="../static/css/spring-core.css"
-          th:href="@{css/spring-core.css}" media="screen">
+    <link rel="stylesheet" href="../../static/css/spring-core.css"
+          th:href="@{../../static/css/spring-core.css}" media="screen">
 </head>
 <body>
 
     <div class="container">
         <h2>Product Details</h2>
         <div>
-            <form class="form-control" th:object="${product}" th:action="@{/product}" method="post">
+            <form class="form-control" th:object="${product}" th:action="@{/templates/product}" method="post">
                 <input type="hidden" th:field="*{id}"/>
                 <div class="form-group">
                     <label class="col-sm-2 control-label">Description:</label>
