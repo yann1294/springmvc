@@ -105,4 +105,9 @@ public class CustomerServiceImpl implements CustomerService {
     public List<Customer> listAllCustomers() {
         return new ArrayList<>(customers.values());
     }
+
+    @Override
+    public Customer getCustomerById(Integer id) {
+        return customers.get(id);
+    }
 }

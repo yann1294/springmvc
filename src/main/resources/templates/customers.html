@@ -29,6 +29,7 @@
                 <th>City</th>
                 <th>State</th>
                 <th>ZipCode</th>
+                <th>List</th>
             </tr>
             <tr th:each="customer : ${customers}">
                 <td th:text="${customer.id}"></td>
@@ -41,6 +42,7 @@
                 <td th:text="${customer.city}"></td>
                 <td th:text="${customer.state}"></td>
                 <td th:text="${customer.zipCode}"></td>
+                <td><a th:href="${'/customer/' + customer.id}">View</a></td>
             </tr>
         </table>
     </div>

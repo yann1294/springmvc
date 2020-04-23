@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spring Core Online Tutorial - Show Products</title>
+
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/webjars/bootstrap/4.0.0/css/bootstrap.min.css"
+          th:href="@{/webjars/bootstrap/4.0.0/css/bootstrap.min.css}" media="screen">
+    <script src="http://cdn.jsdelivr.net/webjars/jquery/3.5.0/jquery.min.js"
+            th:href="@{/webjars/jquery/3.5.0/jquery.min.js}"></script>
+
+    <link rel="stylesheet" href="../static/css/spring-core.css"
+          th:href="@{css/spring-core.css}" media="screen">
+</head>
+<body>
+<div class="container">
+
+    <div class="row">
+        <div class="col-sm-6">
+            <h2>Show Customer </h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-4">
+            <form action="" class="form-control">
+                <div class="form-group">
+                    <label  class="col-sm-2 control-label">Customer Id:</label>
+                    <div class="col-sm-10">
+                        <p class="form-control" th:text="${customer.id}">Customer Id</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label  class="col-sm-2 control-label">First Name:</label>
+                    <div class="col-sm-10">
+                        <p class="form-control" th:text="${customer.firstName}">FirstName</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label  class="col-sm-2 control-label">LastName:</label>
+                    <div class="col-sm-10">
+                        <p class="form-control form-control-lg" th:text="${customer.lastName}">LastName</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label  class="col-sm-2 control-label">Email:</label>
+                    <div class="col-sm-10">
+                        <p class="form-control" th:text="${customer.email}">ImageUrl</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label  class="col-sm-2 control-label">Phone:</label>
+                    <div class="col-sm-10">
+                        <p class="form-control" th:text="${customer.phoneNumber}">Phone</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label  class="col-sm-2 control-label">Address1:</label>
+                    <div class="col-sm-10">
+                        <p class="form-control" th:text="${customer.addressOne}">Address 1</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label  class="col-sm-2 control-label">Address2:</label>
+                    <div class="col-sm-10">
+                        <p class="form-control" th:text="${customer.addressTwo}">Address 2</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label  class="col-sm-2 control-label">City:</label>
+                    <div class="col-sm-10">
+                        <p class="form-control" th:text="${customer.city}">City</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label  class="col-sm-2 control-label">State:</label>
+                    <div class="col-sm-10">
+                        <p class="form-control" th:text="${customer.state}">State</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label  class="col-sm-2 control-label">ZipCode</label>
+                    <div class="col-sm-10">
+                        <p class="form-control" th:text="${customer.zipCode}">ZipCode</p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
